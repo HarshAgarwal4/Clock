@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Analog Clock , Digital clock & stopwatch</h1>
+        <p class="intro">Explore various tools including an analog clock, a digital clock, and a stopwatch.</p>
+
+        <div class="card">
+            <h2 class="card-title">Analog Clock</h2>
+            <div class="clock">
+                <div class="box">
+                    <div class="hourhand"></div>
+                    <div class="minutehand"></div>
+                    <div class="secondhand"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Digital Clock</h2>
+            <div class="digitall">
+                <div class="date">
+                    <div>Date</div>
+                    <div id="getdate"></div>
+                    <div>Day</div>
+                    <div id="getday"></div>
+                </div>
+                <div class="digital">
+                    <div>hour</div>
+                    <div>min</div>
+                    <div>sec</div>
+                    <div id="hour"></div>
+                    <div id="min"></div>
+                    <div id="sec"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Stopwatch</h2>
+            <div class="stopwatch">
+                <div id="shour">00</div>
+                <div class="min" id="smin">00</div>
+                <div class="sec" id="ssec">00</div>
+                <div class="milisec" id="sms">00</div>
+                <div class="buttons">
+
+                    <button id="start" onclick="start()">Start</button>
+                    <button id="reset" onclick="resetwatch()">Reset</button>
+                    <button id="stop" onclick="stop()">Stop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

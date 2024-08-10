@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    color: #007bff; 
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #6c757d; 
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #343a40; 
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    background-image: url(clock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 10;
+}
+
+.minutehand{
+    border: 2px solid;
+    height: 70%;
+    width: 0px;
+    position: absolute;
+    transform-origin: bottom;
+}
+.hourhand{
+    border: 2px solid;
+    transform-origin: bottom;
+    height: 50%;
+    width: 0px;
+    position: absolute;
+}
+.secondhand{
+    transform-origin: bottom;
+    border: 2px solid;
+    height: 90%;
+    width: 0px;
+    position: absolute;
+}
+
+
+
+.digitall {
+    border: 2px solid; 
+    width: 250px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.date {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.date div {
+    border: 1px solid #6c757d;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.digital {
+    width: 100%;
+    height: 100%;
+    border: 2px solid; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 65%;
+    font-weight: bold;
+    font-size: xx-large;
+    align-items: center;
+    justify-items: center;
+    background-color: #f8f9fa; 
+}
+
+.digital div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+.stopwatch {
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    width: 250px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: xx-large;
+    background-color: #f8f9fa;
+}
+
+.stopwatch div {
+    border: 2px solid #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef; 
+}
+
+.stopwatch .buttons {
+    grid-column: 1/5;
+    display: flex;
+}
+
+.stopwatch .buttons button {
+    width: 40%;
+    height: 100%;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    border-right: 1px solid;
+}
+
+.stopwatch .buttons button:hover {
+    background-color: #0056b3; 
+}
+
+.stopwatch .buttons button:active {
+    background-color: #004085; 
+}
